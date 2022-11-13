@@ -111,6 +111,9 @@
                             <a href="#" class="header-search"><i class="fa fa-search"></i></a>
                         </li>
                     </ul>
+                    <span class="menu-burger">
+                        <i class="fa fa-bars"></i>
+                    </span>
                 </nav>
             </div>
         </div>
@@ -504,6 +507,9 @@
             </div>
         </div>
     </div>
+
+    <!-- Mobile menu -->
+    <!-- ---- -->
     <!-- Swiper -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <!-- Initialize Swiper -->
@@ -529,6 +535,17 @@
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
+        breakpoints: {
+            900:{
+                slidesPerView: 1,
+            },
+            650:{
+                slidesPerView: 1,
+            },
+            350:{
+                slidesPerView: 1,
+            }
+        }
       });
       
       var swiper = new Swiper(".news-slider", {
@@ -538,6 +555,14 @@
           nextEl: ".swiper-button-next",
           prevEl: ".swiper-button-prev",
         },
+        breakpoints: {
+            1250:{
+                slidesPerView: 1,
+            },
+            350:{
+                slidesPerView: 1,
+            }
+        }
       });
       </script>
 </body>

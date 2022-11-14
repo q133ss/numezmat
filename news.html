@@ -111,7 +111,7 @@
                             <a href="#" class="header-search"><i class="fa fa-search"></i></a>
                         </li>
                     </ul>
-                    <span class="menu-burger">
+                    <span class="menu-burger" onclick="mobileMenu()">
                         <i class="fa fa-bars"></i>
                     </span>
                 </nav>
@@ -271,7 +271,40 @@
     </div>
 
     <!-- Mobile menu -->
+    <div class="mob-menu-popup display-n" id="mob-menu-popup">
+        <div class="mob-menu-popup-content">
+            <div id="close-mob-menu" onclick="closeMenu()">
+                <span>
+                    X
+                </span>
+            </div>
+            <ul>
+                <li>
+                    <a href="#">Новости</a>
+                </li>
+                <li>
+                    <a href="#">Определение и оценка</a>
+                </li>
+                <li>
+                    <a href="#">Экспертиза</a>
+                </li>
+                <li>
+                    <a href="#">Каталог</a>
+                </li>
+                <li>
+                    <a href="#">Магазин</a>
+                </li>
+                <li>
+                    <a href="#">Библиотека</a>
+                </li>
+                <li>
+                    <a href="#">Беседка</a>
+                </li>
+            </ul>
+        </div>
+    </div>
     <!-- ---- -->
+    <script src="/js/main.js"></script>
     <!-- Swiper -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <!-- Initialize Swiper -->

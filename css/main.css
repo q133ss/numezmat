@@ -1237,6 +1237,225 @@ footer {
   margin-top: 29px;
 }
 
+.rating-show {
+  background-color: #FFFFFF;
+}
+
+.rating-show-wrapper {
+  display: -ms-grid;
+  display: grid;
+  background-color: #FFFFFF;
+  grid-column-gap: 22px;
+  -ms-grid-columns: 3fr 22px 1fr;
+  grid-template-columns: 3fr 1fr;
+}
+
+.rating-show-content {
+  padding: 10px;
+  background: #FFFFFF;
+  padding: 28px 0 28px 0;
+}
+
+.rating-show-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 34px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px;
+  background-color: #F3F7FA;
+}
+
+.rating-show-info-block {
+  max-width: 285px;
+}
+
+.rating-show-title {
+  font-size: 18px;
+  font-weight: 500;
+  color: #161616;
+  font-family: "TTNorms", sans-serif;
+  margin-bottom: 25px;
+}
+
+.rating-show-description {
+  color: #4A4A4A;
+  font-weight: 400;
+  font-size: 16px;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 53px;
+}
+
+.rating-show-views {
+  color: #3F6695;
+  text-transform: uppercase;
+  font-weight: 400;
+  font-size: 11px;
+  font-family: "Roboto", sans-serif;
+  margin-bottom: 41px;
+}
+
+.rating-show-views-count {
+  color: #FFFFFF;
+  padding: 8px 28px;
+  border-radius: 16px;
+  background-color: #3F6695;
+}
+
+.rating-show-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.rating-show-date {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #878787;
+}
+
+.rating-author {
+  font-family: "Roboto", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  color: #878787;
+  text-transform: uppercase;
+}
+
+.rating-author a {
+  color: #3F6695;
+  text-decoration: underline;
+}
+
+.rating-show-sidebar {
+  background-color: #FFFFFF;
+  padding: 28px 0 28px 0;
+}
+
+.rating-show-sidebar-wrap {
+  max-width: 300px;
+}
+
+.rating-show-sidebar-wrap img {
+  width: 100%;
+}
+
+.rating-show-other-themes {
+  font-weight: 500;
+  font-size: 18px;
+  font-family: "Roboto", sans-serif;
+  color: #3F6695;
+  margin-top: 50px;
+  margin-bottom: 32px;
+}
+
+.rating-show-edit-btn {
+  background-color: #222222;
+  border-radius: 5px;
+  padding: 5px 20px;
+  color: #FFFFFF;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-right: 9px;
+}
+
+.rating-show-control {
+  margin-top: 18px;
+  text-align: right;
+  font-family: "TTHoves", sans-serif;
+  font-size: 11px;
+}
+
+.rating-show-edit-btn img {
+  margin-left: 28px;
+}
+
+.rating-show-block-btn {
+  background-color: #CB3631;
+  border-radius: 5px;
+  padding: 9px 20px;
+  color: #FFFFFF;
+  font-family: "TTHoves", sans-serif;
+  font-size: 11px;
+}
+
+.comment-area {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  background-color: #F3F7FA;
+  padding: 16px 29px;
+  gap: 36px;
+  border-radius: 5px;
+}
+
+.comment-avatar {
+  min-width: 62px;
+  min-height: 62px;
+}
+
+.comment-nick {
+  margin-top: 11px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+}
+
+.comment-form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+  grid-template-columns: 1fr;
+}
+
+.comment-field {
+  width: 100%;
+}
+
+.comment-select-coin {
+  width: 100%;
+  margin-bottom: 9px;
+  padding: 13px 28px;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 2px 2px -2px rgba(34, 47, 62, 0.1), 0 8px 8px -4px rgba(34, 47, 62, 0.07);
+          box-shadow: 0 2px 2px -2px rgba(34, 47, 62, 0.1), 0 8px 8px -4px rgba(34, 47, 62, 0.07);
+  border: 2px solid #eee;
+}
+
+.comment-field {
+  background-color: #FFFFFF;
+  margin-top: 9px;
+  padding: 28px;
+}
+
+.comment-form-btn-wrap {
+  width: 100%;
+  text-align: right;
+}
+
+.comment-form-btn {
+  padding: 8px 38px;
+  font-family: "Roboto", sans-serif;
+  font-size: 11px;
+  font-weight: 500;
+  background-color: #3F6695;
+  border-radius: 5px;
+  color: #FFFFFF;
+  margin-top: 19px;
+}
+
 /* Adaprive */
 @media screen and (max-width: 1200px) {
   .container {

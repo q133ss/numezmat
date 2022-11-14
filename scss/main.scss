@@ -878,6 +878,7 @@ footer{
     display: flex;
     min-width: 905px;
     border-radius: 5px;
+    max-height: 184px;
 }
 
 .post-image{
@@ -953,6 +954,64 @@ footer{
     grid-row-gap: 20px;
 }
 
+.catalog-search{
+    width: 228px;
+    height: 32px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+    float: left;
+    display: flex;
+    align-items: center;
+    margin-right: 84px;
+}
+
+.catalog-search-icon{
+    padding: 6px;
+    background-image: url("/img/search-bg.png");
+    background-size: cover;
+    margin-left: 6px;
+}
+
+.catalog-search-input{
+    color: #B4B4B4;
+    font-size: 11px;
+    font-weight: 400;
+    font-family: "TTNorms", sans-serif;
+    margin-left: 13px;
+}
+
+.post-categories{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-column-gap: 57px;
+    grid-row-gap: 14px;
+    margin-bottom: 26px;
+}
+
+.post-category{
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    display: flex;
+    align-items: center;
+    color: #494949;
+}
+
+.post-category-icon{
+    margin-right: 15px;
+}
+
+.catalog-post-content{
+    justify-content: space-between;
+    width: 100%;
+}
+
+.post-catalog-info{
+    align-self: start;
+    text-align: right;
+    margin-top: 29px;
+}
+
 /* Adaprive */
 
 @media screen and (max-width: 1200px) {
@@ -966,6 +1025,10 @@ footer{
 
     .post{
         min-width: 705px;
+    }
+
+    .post-categories{
+        grid-column-gap: 10px;
     }
 }
 
@@ -1002,6 +1065,10 @@ footer{
 
     .posts-page-wrap{
         flex-direction: column;
+    }
+
+    .post{
+        max-height: 100%;
     }
 }
 
@@ -1128,6 +1195,12 @@ footer{
     .page-header-right{
         margin-top: 24px;
     }
+
+    .catalog-search{
+        margin: 0;
+        float: none;
+        margin-bottom: 10px;
+    }
 }
 
 
@@ -1169,5 +1242,9 @@ footer{
 
     .why-wrapper{
         padding: 0;
+    }
+    
+    .post-categories{
+        grid-template-columns: repeat(1,1fr);
     }
 }

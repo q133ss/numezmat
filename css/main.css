@@ -1774,6 +1774,7 @@ footer {
   -ms-grid-columns: (1fr)[2];
   grid-template-columns: repeat(2, 1fr);
   max-width: 650px;
+  grid-row-gap: 10px;
 }
 
 .profile-group label {
@@ -1796,6 +1797,40 @@ footer {
 }
 
 .profile-save-btn {
+  max-width: 300px;
+}
+
+.login-form {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #F3F7FA;
+  padding: 20px;
+  border-radius: 5px;
+  grid-row-gap: 10px;
+}
+
+.login-group {
+  width: 300px;
+}
+
+.login-group label {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.login-group input {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  background-color: #FFFFFF;
+  border-radius: 5px;
   max-width: 300px;
 }
 
@@ -2025,6 +2060,9 @@ footer {
   .breadcrumbs a::after {
     content: "";
     background: none;
+  }
+  .login-group {
+    width: 100%;
   }
 }
 @media screen and (max-width: 610px) {

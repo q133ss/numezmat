@@ -1715,6 +1715,90 @@ footer {
   margin-top: 36px;
 }
 
+.profile-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 30px;
+}
+
+.profile-menu {
+  max-width: 200px;
+  background-color: #F3F7FA;
+  padding: 10px;
+  border-radius: 5px;
+  width: 100%;
+}
+
+.profile-menu li {
+  margin-top: 10px;
+}
+
+.profile-menu li a {
+  margin-bottom: 6px;
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  color: #000000;
+}
+
+.profile-menu li a:hover {
+  color: #f4c23d;
+}
+
+.profile-content {
+  width: 100%;
+  background-color: #F3F7FA;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.profile-avatar {
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.profile-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  max-width: 600px;
+}
+
+.profile-form {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[2];
+  grid-template-columns: repeat(2, 1fr);
+  max-width: 650px;
+}
+
+.profile-group label {
+  display: block;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.profile-group input {
+  display: block;
+  width: 100%;
+  padding: 8px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  background-color: #FFFFFF;
+  border-radius: 5px;
+  max-width: 300px;
+}
+
+.profile-save-btn {
+  max-width: 300px;
+}
+
 /* Adaprive */
 @media screen and (max-width: 1200px) {
   .container {

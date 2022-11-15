@@ -1683,6 +1683,38 @@ footer {
   color: #000000;
 }
 
+.filter {
+  padding: 28px 31px;
+  background-color: #F3F7FA;
+  border-radius: 5px;
+}
+
+.filter-select {
+  padding: 13px 21px;
+  width: 100%;
+  border-radius: 5px;
+  border: 1px solid #EAEAEA;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #868686;
+}
+
+.filter-group {
+  margin-top: 18px;
+}
+
+.filter-btn {
+  padding-top: 11px;
+  padding-bottom: 11px;
+  color: #FFFFFF;
+  font-family: "Roboto", sans-serif;
+  background-color: #3F6695;
+  width: 100%;
+  border-radius: 5px;
+  margin-top: 36px;
+}
+
 /* Adaprive */
 @media screen and (max-width: 1200px) {
   .container {

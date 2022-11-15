@@ -1866,6 +1866,13 @@ footer {
   .post {
     min-width: 705px;
   }
+  .profile-form {
+    -ms-grid-columns: (1fr)[1];
+    grid-template-columns: repeat(1, 1fr);
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 @media screen and (max-width: 874px) {
   .why-blocks {
@@ -2063,6 +2070,29 @@ footer {
   }
   .login-group {
     width: 100%;
+  }
+  .profile-content {
+    text-align: center;
+  }
+  .profile-avatar {
+    margin-bottom: 20px;
+  }
+  .profile-wrap {
+    display: -ms-grid;
+    display: grid;
+  }
+  .profile-menu {
+    max-width: 100%;
+    text-align: center;
+  }
+  .profile-form {
+    text-align: center;
+  }
+  .profile-group input {
+    max-width: 100%;
+  }
+  .profile-save-btn {
+    max-width: 100%;
   }
 }
 @media screen and (max-width: 610px) {

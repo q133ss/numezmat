@@ -1602,6 +1602,11 @@ footer{
     .post{
         min-width: 705px;
     }
+
+    .profile-form{
+        grid-template-columns: repeat(1,1fr);
+        justify-content: center;
+    }
 }
 
 @media screen and (max-width: 874px) {
@@ -1799,6 +1804,35 @@ footer{
 
     .login-group{
         width: 100%;
+    }
+
+    .profile-content{
+        text-align: center;
+    }
+
+    .profile-avatar{
+        margin-bottom: 20px;
+    }
+
+    .profile-wrap{
+        display: grid;
+    }
+    
+    .profile-menu{
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .profile-form{
+        text-align: center;
+    }
+
+    .profile-group input{
+        max-width: 100%;
+    }
+
+    .profile-save-btn{
+        max-width: 100%;
     }
 }
 

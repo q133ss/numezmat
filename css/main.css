@@ -1834,6 +1834,54 @@ footer {
   max-width: 300px;
 }
 
+.cart-table {
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+  background-color: #f3f7fa;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+.cart-table tr {
+  text-align: center;
+  line-height: 130px;
+}
+
+.cart-table th {
+  width: 100px;
+}
+
+.cart-table td {
+  width: 100px;
+}
+
+.cart-img {
+  width: 100px;
+}
+
+.cart-qty {
+  width: 100%;
+  background-color: #f3f7fa;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.cart-form {
+  padding: 10px;
+  background-color: #f3f7fa;
+  border-radius: 5px;
+}
+
+.cart-form .login-group {
+  margin-bottom: 20px;
+}
+
+.cart-total {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+}
+
 /* Adaprive */
 @media screen and (max-width: 1200px) {
   .container {
@@ -1848,6 +1896,9 @@ footer {
   }
   .post-categories {
     grid-column-gap: 10px;
+  }
+  .cart-table tr {
+    font-size: 11px;
   }
 }
 @media screen and (max-width: 1025px) {
@@ -1872,6 +1923,10 @@ footer {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+  .cart-table tr {
+    font-size: 11px;
+    line-height: unset;
   }
 }
 @media screen and (max-width: 874px) {

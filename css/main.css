@@ -1268,8 +1268,8 @@ footer {
   background-color: #F3F7FA;
 }
 
-.rating-show-info-block {
-  max-width: 285px;
+.rating-show-img {
+  width: 100%;
 }
 
 .rating-show-title {
@@ -1644,6 +1644,43 @@ footer {
   color: #FFFFFF;
   background-color: #3F6695;
   border-radius: 5px;
+}
+
+.characteristics {
+  background-color: #F3F7FA;
+  border-radius: 5px;
+  padding: 28px 31px;
+}
+
+.characteristics-title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  color: #3F6695;
+  margin-bottom: 27px;
+}
+
+.characteristics-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.characteristics-key {
+  font-size: 15px;
+  color: #494949;
+  font-weight: 300;
+  font-family: "Roboto", sans-serif;
+}
+
+.characteristics-value {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+  color: #000000;
 }
 
 /* Adaprive */

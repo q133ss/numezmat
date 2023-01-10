@@ -9,7 +9,11 @@
     <link rel="stylesheet" href="./css/font-awesome.min.css">
     <!-- Swiper -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-
+    <!-- Jquery -->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <!-- jQuery Modal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
 </head>
 <body>
     <div class="before-header">
@@ -237,7 +241,7 @@
                             <div class="post-slide-img">
                                 <img src="./img/post1.png" alt="">
                             </div>
-                            <a href="#" class="post-slide-fast-view">Быстрый просмотр</a>
+                            <a href="#productModal" class="post-slide-fast-view" rel="modal:open">Быстрый просмотр</a>
                             <h3 class="post-slide-title">КАЛАБРИЯ, ТАРЕНТ ДИОБОЛ 280-228 ГГ. ДО Н.Э.</h3>
                             <p class="post-slide-text">25 рублей 1899 года Тимашев Морозов</p>
                             <a href="#" class="post-slide-btn">Подробнее</a>
@@ -541,6 +545,80 @@
             </ul>
         </div>
     </div>
+
+    <!-- Product modal -->
+    <div id="productModal" class="modal">
+        
+        <!-- Gallery -->
+        <div class="productModalWrap">
+            <div class="productGallery">
+                <div style="--swiper-navigation-color: #fff; --swiper-pagination-color: #fff" class="swiper mySwiper2">
+                <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                </div>
+                <div class="swiper-slide">
+                    <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                </div>
+
+                
+                </div>
+                </div>
+                <div thumbsSlider="" class="swiper gallerySwiper">
+                    <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="https://swiperjs.com/demos/images/nature-1.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://swiperjs.com/demos/images/nature-2.jpg" />
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="https://swiperjs.com/demos/images/nature-3.jpg" />
+                    </div>
+                    
+                    </div>
+                </div>
+            </div>
+            <div class="productData">
+                <h3>Характеристики</h3>
+                <div class="charWrap">
+                    <div class="charItem">
+                        <div class="charKey">Страна:</div>
+                        <div class="charVal">Россия</div>
+                    </div>
+                    <div class="charItem">
+                        <div class="charKey">Тираж (шт):</div>
+                        <div class="charVal"></div>
+                    </div>
+                </div>
+                <div class="charWrap">
+                    <div class="charItem">
+                        <div class="charKey">Страна:</div>
+                        <div class="charVal">Россия</div>
+                    </div>
+                    <div class="charItem">
+                        <div class="charKey">Тираж (шт):</div>
+                        <div class="charVal"></div>
+                    </div>
+                </div>
+                <div class="charWrap">
+                    <div class="charItem">
+                        <div class="charKey">Страна:</div>
+                        <div class="charVal">Россия</div>
+                    </div>
+                    <div class="charItem">
+                        <div class="charKey">Тираж (шт):</div>
+                        <div class="charVal"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- End Gallery -->
+    </div>
+
     <!-- ---- -->
     <script src="./js/main.js"></script>
     <!-- Swiper -->
@@ -600,6 +678,41 @@
             }
         }
       });
+      </script>
+      <script>
+        var swiper = new Swiper(".gallerySwiper", {
+          loop: false,
+          spaceBetween: 10,
+          slidesPerView: 3,
+          freeMode: true,
+          watchSlidesProgress: true,
+          width: 335,
+          centeredSlides: true,
+
+        //   breakpoints: {
+        //         750:{
+        //             slidesPerView: 2,
+        //         },
+        //         650:{
+        //             slidesPerView: 'auto',
+        //             centeredSlides: false,
+        //             watchSlidesProgress: false,
+        //             width: null,
+        //         }
+        //     }
+        });
+        var swiper2 = new Swiper(".mySwiper2", {
+          loop: false,
+          spaceBetween: 10,
+          autoHeight: true,
+        //   navigation: {
+        //     nextEl: ".swiper-button-next",
+        //     prevEl: ".swiper-button-prev",
+        //   },
+          thumbs: {
+            swiper: swiper,
+          },
+        });
       </script>
 </body>
 </html>

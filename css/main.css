@@ -1266,19 +1266,26 @@ footer {
 .rating-show-content {
   padding: 10px;
   background: #FFFFFF;
-  padding: 28px 0 28px 0;
+  padding: 0px 0 28px 0;
 }
 
 .rating-show-info {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 34px;
+  gap: 16px;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   padding: 10px;
+  background-color: #FFFFFF;
+}
+
+.rating-show-info-block {
+  height: 347px;
   background-color: #F3F7FA;
+  padding: 36px 29px;
+  width: 75%;
 }
 
 .rating-show-img {
@@ -1288,6 +1295,7 @@ footer {
 .rating-show-title {
   font-size: 18px;
   font-weight: 500;
+  max-width: 215px;
   color: #161616;
   font-family: "TTNorms", sans-serif;
   margin-bottom: 25px;
@@ -1299,6 +1307,7 @@ footer {
   font-size: 16px;
   font-family: "Roboto", sans-serif;
   margin-bottom: 53px;
+  max-width: 285px;
 }
 
 .rating-show-views {
@@ -1324,6 +1333,7 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  max-width: 285px;
 }
 
 .rating-show-date {
@@ -1349,6 +1359,11 @@ footer {
 .rating-show-sidebar {
   background-color: #FFFFFF;
   padding: 28px 0 28px 0;
+  margin-top: 57px;
+}
+
+.tox-notifications-container {
+  display: none;
 }
 
 .rating-show-sidebar-wrap {
@@ -1364,7 +1379,7 @@ footer {
   font-size: 18px;
   font-family: "Roboto", sans-serif;
   color: #3F6695;
-  margin-top: 50px;
+  margin-top: 34px;
   margin-bottom: 32px;
 }
 
@@ -1400,6 +1415,46 @@ footer {
   color: #FFFFFF;
   font-family: "TTHoves", sans-serif;
   font-size: 11px;
+}
+
+.rating_view_btn {
+  position: relative;
+  top: -32px;
+  text-align: center;
+  background-color: #FFFFFF;
+  opacity: 0.9;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: none;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.rating_view_btn a {
+  font-family: "Roboto", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  color: #484848;
+  text-decoration: underline;
+}
+
+.slider__image img:hover + .rating_view_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.rating_view_btn:hover + .rating_view_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.rating_view_btn a:hover + .rating_view_btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .comment-area {

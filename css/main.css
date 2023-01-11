@@ -2093,14 +2093,20 @@ footer {
   margin-bottom: 28px;
 }
 
-.search-wrap {
-  background-color: #f3f7fa;
-  padding: 10px;
-  border-radius: 5px;
+.search-header {
+  font-size: 14px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  color: #494949;
 }
 
-.search-request-wrap {
-  margin-bottom: 20px;
+.search-content {
+  background-color: #f3f7fa;
+}
+
+.search-wrap {
+  background-color: #FFFFFF;
+  padding: 10px;
 }
 
 .search-request-wrap h3 {
@@ -2110,37 +2116,61 @@ footer {
 .search-request {
   display: block;
   width: 100%;
-  padding: 8px;
+  background-color: #F3F7FA;
+  padding: 15px 24px;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 400;
-  background-color: #FFFFFF;
+  color: #000000;
+  margin-top: 12px;
   border-radius: 5px;
 }
 
-.search-filters label {
-  font-family: "Roboto", sans-serif;
-  font-size: 16px;
-  font-weight: 500;
+.search-inp-ico {
+  position: relative;
+  top: -35px;
+  right: -96%;
+}
+
+.search-filters {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .search-filter {
   display: block;
   width: 100%;
-  padding: 8px;
+  padding: 12px 24px;
   font-family: "Roboto", sans-serif;
   font-size: 14px;
   font-weight: 400;
-  background-color: #FFFFFF;
+  background-color: #F3F7FA;
+  min-width: 232px;
   border-radius: 5px;
-  max-width: 300px;
+}
+
+.search-result-wrap {
+  background-color: #FFFFFF;
 }
 
 .search-results {
-  background-color: #f3f7fa;
+  background-color: #FFFFFF;
   padding: 10px;
   border-radius: 5px;
   margin-top: 20px;
+}
+
+.search-val {
+  color: #3F6695;
+  margin-right: 44px;
+}
+
+.search-post-info {
+  text-align: unset;
 }
 
 .blocker {
@@ -2545,6 +2575,9 @@ footer {
   }
   .profile-save-btn {
     max-width: 100%;
+  }
+  .search-inp-ico {
+    right: -90%;
   }
 }
 @media screen and (max-width: 610px) {

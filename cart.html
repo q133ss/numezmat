@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,9 +9,11 @@
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/font-awesome.min.css">
     <!-- Swiper -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js"
+        integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
 </head>
+
 <body>
     <div class="before-header">
         <div class="before-header-container">
@@ -58,7 +61,7 @@
                         <li class="menu-item has-child">
                             <a href="./catalog.html">Каталог</a>
                             <i class="fa fa-angle-down"></i>
-                            
+
                             <ul class="sub-menu">
                                 <li class="sub-has-child">
                                     Меню 1
@@ -120,7 +123,7 @@
     </header>
 
     <div class="page-content">
-        
+
         <section class="page-header">
             <div class="container">
                 <div class="page-header-wrap">
@@ -143,78 +146,87 @@
             <div class="container">
                 <table class="cart-table">
                     <tr>
-                      <th>Изображение</th>
-                      <th>Название</th>
-                      <th>Цена</th>
-                      <th>Колличество</th>
-                      <th>Удалить</th>
+                        <th style="width: 275px;">Изображение</th>
+                        <th>Название</th>
+                        <th>Цена</th>
+                        <th style="width:80px">Колличество</th>
+                        <th>Удалить</th>
                     </tr>
                     <tr>
-                      <td>
-                        <img class="cart-img" src="./img/post1.png" alt="">
-                      </td>
-                      <td>
-                        Пинцет для монет LUXUS
-                      </td>
-                      <td>1350 ₽</td>
-                      <td>
-                        <input type="text" class="cart-qty" value="1">
-                      </td>
-                      <td>
-                        <button type="button">
-                            <i class="fa fa-trash"></i>
-                        </button>
-                      </td>
+                        <td>
+                            <img class="cart-img" src="./img/cart-place.png" alt="">
+                        </td>
+                        <td>
+                            <span class="cart-title">Пинцет для монет LUXUS</span>
+                        </td>
+                        <td><span class="cart-title">1350 ₽</span></td>
+                        <td>
+                            <div class="cart-qty-wrap">
+                                <button class="cart-qty-btn" data-action="plus">+</button>
+                                <input type="text" class="cart-qty" value="1">
+                                <button class="cart-qty-btn" data-action="minus">-</button>
+                            </div>
+                        </td>
+                        <td>
+                            <button type="button">
+                                <img src="./img/cart-close.png" alt="">
+                            </button>
+                        </td>
                     </tr>
 
                     <tr>
                         <td>
-                          <img class="cart-img" src="./img/post1.png" alt="">
+                            <img class="cart-img" src="./img/cart-place.png" alt="">
                         </td>
                         <td>
-                          Пинцет для монет LUXUS
+                            <span class="cart-title">Пинцет для монет LUXUS</span>
                         </td>
-                        <td>1350 ₽</td>
+                        <td><span class="cart-title">1350 ₽</span></td>
                         <td>
-                          <input type="text" class="cart-qty" value="1">
+                            <div class="cart-qty-wrap">
+                                <button class="cart-qty-btn" data-action="plus">+</button>
+                                <input type="text" class="cart-qty" value="1">
+                                <button class="cart-qty-btn" data-action="minus">-</button>
+                            </div>
                         </td>
                         <td>
-                          <button type="button">
-                              <i class="fa fa-trash"></i>
-                          </button>
+                            <button type="button">
+                                <img src="./img/cart-close.png" alt="">
+                            </button>
                         </td>
-                      </tr>
-                  </table>
+                    </tr>
+                </table>
 
-                  <form action="" class="cart-form">
+                <form action="" class="cart-form">
                     <h3 class="characteristics-title">Оформить заказ</h3>
+                    <div class="cart-form-wrap">
+                        <div class="login-group">
+                            <label>Имя</label>
+                            <input type="text" placeholder="Имя">
+                        </div>
 
-                    <div class="login-group">
-                        <label>Имя</label>
-                        <input type="text" placeholder="Имя">
-                    </div>
+                        <div class="login-group">
+                            <label>Телефон</label>
+                            <input type="text" placeholder="Телефон">
+                        </div>
 
-                    <div class="login-group">
-                        <label>Телефон</label>
-                        <input type="text" placeholder="Телефон">
-                    </div>
+                        <div class="login-group">
+                            <label>Email</label>
+                            <input type="text" placeholder="Email">
+                        </div>
 
-                    <div class="login-group">
-                        <label>Email</label>
-                        <input type="text" placeholder="Email">
-                    </div>
-
-                    <div class="login-group">
-                        <label>Адрес</label>
-                        <input type="text" placeholder="Адрес">
+                        <div class="login-group">
+                            <label>Адрес</label>
+                            <input type="text" placeholder="Адрес">
+                        </div>
                     </div>
 
                     <div class="cart-total">
                         Итого: <span class="cart-total-sum">1350 ₽</span>
                     </div>
 
-                    <button class="comment-form-btn">Отправить</button>
-                  </form>
+                    <button class="comment-form-btn cart-payment-btn">Оплатить</button>
+                </form>
             </div>
         </section>
 
@@ -222,7 +234,7 @@
             <div class="container">
                 <div class="footer-row">
                     <div class="footer-col">
-                        
+
                         <p class="footer-desc">
                             Нумизмат - Онлайн платформа поклонников нумизматики
                         </p>
@@ -258,7 +270,8 @@
             <div class="container">
                 <div class="pre-footer-row">
                     <div class="pre-footer-col">
-                        <p class="copyright-text">Copyrights 2021 <em>Нумизматика</em>. Сделано с любовью в <a href="https://bpump.ru/" target="_blank" style="color: #fff;">bpump.ru</a> </p>
+                        <p class="copyright-text">Copyrights 2021 <em>Нумизматика</em>. Сделано с любовью в <a
+                                href="https://bpump.ru/" target="_blank" style="color: #fff;">bpump.ru</a> </p>
                     </div>
                     <div class="pre-footer-col">
                         <ul class="copyright-links">
@@ -309,60 +322,19 @@
     </div>
     <!-- ---- -->
     <script src="./js/main.js"></script>
-    <!-- Swiper -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <!-- Initialize Swiper -->
     <script>
-        var swiper = new Swiper(".mySwiper", {
-          navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-          },
-          pagination: {
-            el: ".swiper-pagination",
-            clickable: true,
-            renderBullet: function (index, className) {
-                return '<button class="slider-paginate '+className+'"></button>';
+        $('.cart-qty-btn').click(function () {
+            let input = $(this).parent().find('input');
+            let cur = parseInt(input.val())
+            if ($(this).data('action') == 'plus') {
+                input.val(cur + 1);
+            } else {
+                if (cur > 1) {
+                    input.val(cur - 1);
+                }
             }
-          }
         });
-
-      var swiper = new Swiper(".posts-slider", {
-        slidesPerView: 3,
-        spaceBetween: 30,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        breakpoints: {
-            900:{
-                slidesPerView: 1,
-            },
-            650:{
-                slidesPerView: 1,
-            },
-            350:{
-                slidesPerView: 1,
-            }
-        }
-      });
-      
-      var swiper = new Swiper(".news-slider", {
-        slidesPerView: 2,
-        spaceBetween: 30,
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        breakpoints: {
-            1250:{
-                slidesPerView: 1,
-            },
-            350:{
-                slidesPerView: 1,
-            }
-        }
-      });
-      </script>
+    </script>
 </body>
+
 </html>

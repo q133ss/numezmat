@@ -130,6 +130,9 @@
                             <li>Мой профиль</li>
                         </ul>
                         <div class="page-title-block">
+                            <div class="page-img">
+                                <img src="./img/profile-ico.png" alt="">
+                            </div>
                             <h3 class="page-title">
                                 Профиль
                             </h3>
@@ -162,29 +165,34 @@
                         </li>
                     </ul>
                     <div class="profile-content">
-                        <img src="./img/post1.png" class="profile-avatar" alt="">
-                        <form action="#" class="profile-form">
-                            <div class="profile-group">
-                                <label>Имя</label>
-                                <input type="text" placeholder="Имя" value="Алексей">
+                        <div class="profile-img">
+                            <img src="./img/post1.png" class="profile-avatar" alt="">
+                            <button type="button" class="change-avatar">Заменить фото профиля</button>
+                        </div>
+                        <form action="#" class="">
+                            <div class="profile-form">
+                                <div class="profile-group">
+                                    <label>Имя</label>
+                                    <input type="text" placeholder="Имя" value="Алексей">
+                                </div>
+
+                                <div class="profile-group">
+                                    <label>Email</label>
+                                    <input type="text" placeholder="Email" value="admin@email.net">
+                                </div>
+
+                                <div class="profile-group">
+                                    <label>Старый пароль</label>
+                                    <input type="password" placeholder="********">
+                                </div>
+
+                                <div class="profile-group">
+                                    <label>Новый пароль</label>
+                                    <input type="password" placeholder="********">
+                                </div>
                             </div>
 
-                            <div class="profile-group">
-                                <label>Email</label>
-                                <input type="text" placeholder="Email" value="admin@email.net">
-                            </div>
-
-                            <div class="profile-group">
-                                <label>Старый пароль</label>
-                                <input type="password" placeholder="********">
-                            </div>
-
-                            <div class="profile-group">
-                                <label>Новый пароль</label>
-                                <input type="password" placeholder="********">
-                            </div>
-
-                            <button class="comment-form-btn profile-save-btn">Сохранить</button>
+                            <button class="change-avatar profile-save-btn">Сохранить</button>
                         </form>
                     </div>
                 </div>

@@ -1550,23 +1550,29 @@ footer{
 }
 
 .profile-menu{
-    max-width: 200px;
+    max-width: 300px;
     background-color: #F3F7FA;
-    padding: 10px;
+    padding: 24px 30px;
     border-radius: 5px;
     width: 100%;
 }
 
 .profile-menu li{
-    margin-top: 10px;
+    margin-bottom: 19px;
+    background-color: #3F6695;
+    padding: 11px 43px;
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 19px;
+    text-align: center;
 }
 
 .profile-menu li a{
     margin-bottom: 6px;
     font-family: "Roboto", sans-serif;
     font-size: 16px;
-    font-weight: 500;
-    color: #000000;
+    font-weight: 400;
+    color: #ffffff;
 }
 
 .profile-menu li a:hover{
@@ -1576,13 +1582,32 @@ footer{
 .profile-content{
     width: 100%;
     background-color: #F3F7FA;
-    padding: 10px;
+    padding: 26px 20px;
     border-radius: 5px;
+    display: flex;
+}
+
+.profile-img{
+    display: grid;
 }
 
 .profile-avatar{
     border-radius: 50%;
     cursor: pointer;
+    width: 210px;
+    height: 210px;
+}
+
+.change-avatar{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #FFFFFF;
+    padding: 11px 27px;
+    background-color: #3F6695;
+    border-radius: 5px;
+    margin-top: 28px;
+    height: 44px;
 }
 
 .profile-info{
@@ -1594,8 +1619,10 @@ footer{
 .profile-form{
     display: grid;
     grid-template-columns: repeat(2,1fr);
-    max-width: 650px;
-    grid-row-gap: 10px;
+    grid-row-gap: 24px;
+    grid-column-gap: 25px;
+    margin-left: 61px;
+    width: 100%;
 }
 
 .profile-group label{
@@ -1603,22 +1630,26 @@ footer{
     font-family: "Roboto", sans-serif;
     font-size: 14px;
     font-weight: 400;
+    color: #494949;
+    margin-bottom: 9px;
 }
 
 .profile-group input{
     display: block;
     width: 100%;
-    padding: 8px;
+    padding: 15px 22px;
     font-family: "Roboto", sans-serif;
     font-size: 14px;
     font-weight: 400;
     background-color: #FFFFFF;
-    border-radius: 5px;
-    max-width: 300px;
+    border-radius: 10px;
+    color: #232323;
 }
 
 .profile-save-btn{
-    max-width: 300px;
+    width: 100%;
+    margin-top: 78px;
+    margin-left: 61px;
 }
 
 .login-form{
